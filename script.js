@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
       popup.style.display = 'none';
     });
 
-    document.addEventListener('keydown' (e) => {
+    window.addEventListener('keydown' (e) => {
         if (e.key === "g") {
             alert("G?");
         }
