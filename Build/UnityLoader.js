@@ -465,16 +465,18 @@ var UnityLoader = UnityLoader || {
             var o = document.createElement("span");
             (o.textContent = t), n.appendChild(o), n.appendChild(document.createElement("br"));
             for (var a = 0; a < r.length; a++) {
+                alert("Called");
                 var i = document.createElement("button");
                 r[a].text && (i.textContent = r[a].text),
                     r[a].callback && (i.onclick = r[a].callback),
                     (i.style.margin = "5px"),
-                    /*i.addEventListener("click", function () {
+                    i.addEventListener("click", function () {
+                        alert("clicked");
                         e.container.removeChild(n);
                     }),
-                    n.appendChild(i);*/
                     n.appendChild(i);
-                    i.style = "position: absolute;";
+                    //n.appendChild(i);
+                    //i.style = "position: absolute;";
                     //e.container.removeChild(n);
             }
             e.container.appendChild(n);
