@@ -10,5 +10,11 @@ window.addEventListener('DOMContentLoaded', function() {
     closeBtn.addEventListener('click', function() {
       popup.style.display = 'none';
     });
+
+    document.addEventListener('keydown' (e) => {
+        if (e.code == 71) {
+            alert("G?");
+        }
+    });
   });
   
