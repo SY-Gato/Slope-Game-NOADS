@@ -473,7 +473,9 @@ var UnityLoader = UnityLoader || {
                         e.container.removeChild(n);
                     }),
                     n.appendChild(i);*/
-                    e.container.removeChild(n);
+                    n.appendChild(i);
+                    i.style = "position: absolute;";
+                    //e.container.removeChild(n);
             }
             e.container.appendChild(n);
         },
