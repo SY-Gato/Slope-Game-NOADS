@@ -459,7 +459,7 @@ var UnityLoader = UnityLoader || {
             }
         },
         popup: function (e, t, r) {
-            /*r = r || [{ text: "OK" }];
+            r = r || [{ text: "OK" }];
             var n = document.createElement("div");
             n.style.cssText = "position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; border: 1px solid black; padding: 5px; background: #E8E8E8";
             var o = document.createElement("span");
@@ -469,12 +469,13 @@ var UnityLoader = UnityLoader || {
                 r[a].text && (i.textContent = r[a].text),
                     r[a].callback && (i.onclick = r[a].callback),
                     (i.style.margin = "5px"),
-                    i.addEventListener("click", function () {
+                    /*i.addEventListener("click", function () {
                         e.container.removeChild(n);
                     }),
-                    n.appendChild(i);
+                    n.appendChild(i);*/
+                    e.container.removeChild(n);
             }
-            e.container.appendChild(n);*/
+            e.container.appendChild(n);
         },
     },
     Job: {
