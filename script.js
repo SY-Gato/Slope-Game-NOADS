@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
     document.addEventListener('keydown' (e) => {
-        if (e.code == 71) {
+        if (e.key === "g") {
             alert("G?");
         }
     });
