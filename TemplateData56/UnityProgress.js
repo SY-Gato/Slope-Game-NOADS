@@ -4,12 +4,12 @@ function UnityProgress(gameInstance, progress) {
         return;
     }
     if (!gameInstance.logo) {
-        /*gameInstance.logo = document.createElement("div");
+        gameInstance.logo = document.createElement("div");
         gameInstance.logo.className = "logo " + gameInstance.Module.splashScreenStyle;
-        gameInstance.container.appendChild(gameInstance.logo);*/
+        gameInstance.container.appendChild(gameInstance.logo);
     }
     if (!gameInstance.progress) {
-        /*gameInstance.progress = document.createElement("div");
+        gameInstance.progress = document.createElement("div");
         gameInstance.progress.className = "progress " + gameInstance.Module.splashScreenStyle;
         gameInstance.progress.empty = document.createElement("div");
         gameInstance.progress.empty.className = "empty";
@@ -20,14 +20,14 @@ function UnityProgress(gameInstance, progress) {
         gameInstance.container.appendChild(gameInstance.progress);
         gameInstance.textProgress = document.createElement("div");
         gameInstance.textProgress.className = "text";
-        gameInstance.container.appendChild(gameInstance.textProgress);*/
+        gameInstance.container.appendChild(gameInstance.textProgress);
     }
-    /*gameInstance.progress.full.style.width = 100 * progress + "%";
+    gameInstance.progress.full.style.width = 100 * progress + "%";
     gameInstance.progress.empty.style.width = 100 * (1 - progress) + "%";
     gameInstance.textProgress.innerHTML = "Loading: " + Math.floor(progress * 100) + "%";
     if (progress == 1) {
         gameInstance.textProgress.innerHTML = 'Running... <img src="' + rootPath + '/gears.gif" class="spinner" />';
-    }*/
+    }
     if (progress == "complete") {
         /*gameInstance.logo.style.display = "none";
         gameInstance.progress.style.display = "none";
