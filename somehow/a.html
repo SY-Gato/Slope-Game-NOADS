@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yes</title>
+  </head>
+  <body>
+    <button onclick="yes()">DoIt</button>
+    <script>
+      function download(text, filename) {
+  const blob = new Blob([text], { type: "text/plain" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = filename;
+  link.click();
+  link.remove();
+  console.log(link);
+      }
+      function yes() {
+        download("how?", "something.txt");
+      }
+    </script>
+  </body>
+</html>
